@@ -1,0 +1,20 @@
+//Written By Sam Stuyvenberg //01/29/2025
+
+namespace _4SistersandtheDuckBear
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("How many chocolate eggs were gathered today?"); //Asks user the number of eggs gathered
+
+            int eggCount = Convert.ToInt32(Console.ReadLine()); // Assumes valid input
+
+            int forSisters = eggCount / 4;
+            int forDuckbear = eggCount % 4;
+
+            Console.WriteLine("Each sister gets " + forSisters + "."); //Prints line for Sisters
+            Console.WriteLine("The duckbear gets " + forDuckbear + "."); //Prints Line for Duckbear
+        }
+    }
+}
